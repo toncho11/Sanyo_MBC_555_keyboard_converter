@@ -7,4 +7,4 @@ The keyboard operates at 1200 baud, with 8 data bits, 2 stop bits and even parit
 Here is some information on the scan codes: https://www.seasip.info/VintagePC/sanyo.html#keybhw
 
 Remove the cable from the RX pin of the Arduino before flashing the code. Otherwise the Arduino IDE will fail with an error.
-You can power the Arduino with 5V from the keyboard using the 5V pin or you can use 12V from the computer but on the Vin pin. 
+You can power the Arduino with 5V from the keyboard using the 5V pin on the Arduino or you can use 12V from the computer but on the Vin pin of the Arduino. I am using Arduino Nano clone.
