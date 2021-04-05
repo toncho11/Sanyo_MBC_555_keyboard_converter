@@ -30,19 +30,19 @@ void loop() {
     //Serial.print("I received: ");
     //Serial.println(incomingByte, DEC);
 
-// adjust numpad to be used as arrows
+// adjust numpad to be used as arrows by replacing the scan codes with the ones for arrows
 
     if (numlock == 0 && incomingByte == 104)
-       incomingByte = 7;
+       incomingByte = 7; //up
     else
     if (numlock == 0 && incomingByte == 100)
-       incomingByte = 5;
+       incomingByte = 5; //left
     else
     if (numlock == 0 && incomingByte == 102)
-       incomingByte = 6;
+       incomingByte = 6; //right
     else
     if (numlock == 0 && incomingByte == 88)
-       incomingByte = 9;
+       incomingByte = 9; //down
 
 //basic keys
     if (incomingByte == 81) //space bar 
@@ -83,7 +83,7 @@ void loop() {
      if (incomingByte == 195 || incomingByte == 100) //4
        Serial.write('4');
        else
-       if (incomingByte == 196 || incomingByte == 101) //5
+     if (incomingByte == 196 || incomingByte == 101) //5
        Serial.write('5');
        else
      if (incomingByte == 197 || incomingByte == 102) //6
@@ -98,10 +98,10 @@ void loop() {
      if (incomingByte == 200 || incomingByte == 105) //9
        Serial.write('9');
        else
-      if (incomingByte == 201 || incomingByte == 84) //0
+     if (incomingByte == 201 || incomingByte == 84) //0
        Serial.write('0');
        else
-      if (incomingByte == 85) //00
+     if (incomingByte == 85) //00
       {
        Serial.write('0');
        Serial.write('0');
@@ -327,8 +327,7 @@ void loop() {
        else
      if (incomingByte == 151) // /
        Serial.write('/'); 
-       else
-       
+       else      
      if (incomingByte == 23) //,
        Serial.write(','); 
        else
@@ -357,58 +356,49 @@ void loop() {
 
      if (incomingByte == 203) //@
        Serial.write('@'); 
-       else
-       
+       else       
      if (incomingByte == 75) //?
        Serial.write('?'); 
-       else
-     
+       else     
      if (incomingByte == 240) //Backslash
        Serial.write(92); 
        else
-
      if (incomingByte == 241) //^
        Serial.write('^'); 
        else
      if (incomingByte == 113) //|
        Serial.write('|'); 
        else
-
      if (incomingByte == 186) //<
        Serial.write('<'); 
        else
      if (incomingByte == 58) //$
        Serial.write('$'); 
        else
-
      if (incomingByte == 187) //>
        Serial.write('>'); 
        else
      if (incomingByte == 59) //&
        Serial.write('&'); 
        else
-
      if (incomingByte == 170) //%
        Serial.write('%'); 
        else
      if (incomingByte == 42) //ù
        Serial.write(249); 
        else
-
      if (incomingByte == 16) //{
        Serial.write('{'); 
        else
      if (incomingByte == 144) //[
        Serial.write('['); 
        else
-
-      if (incomingByte == 155) //]
+     if (incomingByte == 155) //]
        Serial.write(']'); 
        else
-      if (incomingByte == 97) //tab
+     if (incomingByte == 97) //tab
        Serial.write('\t'); 
-       else
-       
+       else      
        //Serial.write(incomingByte);
        {
          Serial.print(' ');
