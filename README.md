@@ -9,4 +9,4 @@ Here is some information on the scan codes: https://www.seasip.info/VintagePC/sa
 Remove the cable from the RX pin of the Arduino before flashing the code. Otherwise the Arduino IDE will fail with an error.
 You can power the Arduino with 5V from the keyboard using the 5V pin on the Arduino or you can use 12V from the computer but on the Vin pin of the Arduino. I am using Arduino Uno or Arduino Nano clone.
 
-If you depress a key that is not mapped then the output will be " " + the numeric code of the depressed key.
+If you depress a key that is not mapped then the output will be " " + the numeric code of the pressed key.
